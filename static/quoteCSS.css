@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial';
+    color: #000000;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 9%;
+    margin-bottom: 100px;
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    max-width: 780px;
+    text-align: center;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+a:visited{...}
+
+.gradient{
+    background-color: lightgoldenrodyellow;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.new-quote{
+    font-size: 32px;
+    font-style: italic;
+    border: 1px solid #98c718;
+    padding: 3px;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.b1{
+    height: 54px;
+    width: 200px;
+    background:rgba(194, 111, 96, 0.575);
+    background-position: center;
+    display: inline-block;
+    font-size: 23px;
+    text-decoration: underline;
+    font-style: oblique;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.b2{
+    height: 54px;
+    width: 174px;
+    background:rgb(153, 163, 93);
+    background-position: center;
+    display: inline-block;
+    font-size: 23px;
+    text-decoration: underline;
+    font-style: oblique;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quote-text {
+    border: 5px solid #98c718;
+    padding: 3px;
+    font-size: 32px;
+    font-style: italic;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.toInctructions{
+    font-size: 28px;
+    font-style: italic;
+}
+
+.instruction{
+    font-size: 32px;
+    font-style: italic;
+    border: 5px solid #98c718;
+    padding: 3px;
+    font-family: monospace;
+    text-align: left;
+    border-radius: 10px;
+}
+
+a:hover{
+    color: rgb(84, 84, 206);
+}
+
+a:active{
+    color:rgb(231, 155, 104);
+}

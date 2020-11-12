@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body%}
+    <div class = "gradient">
+        <h1>Ауф-цитатник</h1>
+        <form method="post" action="/">
+            <a href="{{url_for('new_quote')}}">
+                <button class="b1">
+                    Новая цитата
+                </button>
+            </a>
+        </form>
+        <p class = "quote-text">{{quote}}</p>
+        <p class = "toInstructions">
+        <form action="{{url_for('add_quote')}}">
+            <a href = "{{url_for('add_quote')}}">
+            <button class = "b2">
+                Добавить цитату
+            </button> </a>
+    </form>
+    </div>
+{% endblock %}
