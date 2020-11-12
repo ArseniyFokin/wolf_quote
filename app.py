@@ -29,7 +29,10 @@ with app.app_context():
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    quote = choice(Quote.query.all())
+    try:
+        quote = choice(Quote.query.all())
+    except IndexError:
+        quote = "База данных пуста"
     return render_template("index.html", title='Ауф-цитатник', quote=quote)
 
 
