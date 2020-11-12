@@ -13,8 +13,9 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = "h1Maw~}NDbm~oTEX"
 app.config['DEBUG'] = True
 db = SQLAlchemy(app)
-db.create_all()
 
+with app.app_context():
+    db.create_all()
 
 class Quote(db.Model):
     id = Column(Integer, primary_key=True)
