@@ -1,3 +1,5 @@
+import click
+from flask.cli import with_appcontext
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, Integer, String
 from flask import Flask, render_template, redirect, url_for, request, flash
@@ -14,8 +16,11 @@ app.config['SECRET_KEY'] = "h1Maw~}NDbm~oTEX"
 app.config['DEBUG'] = True
 db = SQLAlchemy(app)
 
-with app.app_context():
+@click.command(name='create_table')
+@with_appcontext
+def create_tables():
     db.create_all()
+
 
 class Quote(db.Model):
     id = Column(Integer, primary_key=True)
