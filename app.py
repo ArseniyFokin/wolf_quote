@@ -16,7 +16,7 @@ app.config['SECRET_KEY'] = "h1Maw~}NDbm~oTEX"
 app.config['DEBUG'] = True
 db = SQLAlchemy(app)
 
-@click.command(name='create_table')
+@click.command(name='create_tables')
 @with_appcontext
 def create_tables():
     db.create_all()
